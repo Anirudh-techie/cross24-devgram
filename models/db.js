@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 // Mongo URI for our temorary DB
+//Remember to change password after hackathon
 var dbURI = 'mongodb+srv://admin_kuttycoder:5XBxEVW72Q0yn3yj@cluster0.hutsm.mongodb.net/auth?retryWrites=true&w=majority';
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGOLAB_URI || dbURI; 
